@@ -1,5 +1,5 @@
 # 🎵🍄 TuneShroom
-An artistic capacitive MIDI USB controller - Just a small project to practice artistic PCB design and embedded programming. Find out more on my [website](oliverchild.com/tuneshroom)
+An artistic capacitive MIDI USB controller - Just a small project to practice artistic PCB design and embedded programming. Find out more on my [website](https://oliverchild.com/tuneshroom)
 
 ![tuneshroom](images/tuneshroom.jpg)
 

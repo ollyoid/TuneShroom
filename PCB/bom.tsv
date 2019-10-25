@@ -1,0 +1,14 @@
+References	Qty	Description
+C1, C2	2	C 22pF Unpolarized capacitor 0805 2012Metric Pad1.15x1.40mm HandSolder
+C3, C5	2	C 0.1uF Unpolarized capacitor 0805 2012Metric Pad1.15x1.40mm HandSolder
+C4	1	C 1uF Unpolarized capacitor 0805 2012Metric Pad1.15x1.40mm HandSolder
+D1, D2	2	LED Light emitting diode 0805 2012Metric Pad1.15x1.40mm HandSolder
+J5, J7, J9, J11, J13, J15, J17, J19, J21, J1, J3, J4, J6, J8, J10, J12, J14, J16, J18, J20, J2, J22, J24, J25	24	Conn 01x01 Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/) contact
+J23	1	USB B Micro Type connector Micro-B Molex 47346-0001
+R1, R5	2	R 10K Resistor 0805 2012Metric Pad1.15x1.40mm HandSolder
+R2, R3	2	R 22 Resistor 0805 2012Metric Pad1.15x1.40mm HandSolder
+R4, R6	2	R 330 Resistor 0805 2012Metric Pad1.15x1.40mm HandSolder
+TH1	1	Thermistor Temperature dependent resistor Fuse 1206 3216Metric Pad1.42x1.75mm HandSolder
+TP1	1	ICSP
+U1	1	ATmega32U4-AU 16MHz, 16kB Flash, 1.25kB SRAM, 512B EEPROM, USB 2.0, TQFP-44 10x10mm P0.8mm
+Y1	1	Crystal 16MHz Two pin crystal SMD HC49-SD HandSoldering

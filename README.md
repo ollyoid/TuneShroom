@@ -1,6 +1,8 @@
 # 🎵🍄 TuneShroom
 An artistic capacitive MIDI USB controller - Just a small project to practice artistic PCB design and embedded programming. Find out more on my [website](oliverchild.com/tuneshroom)
 
+![tuneshroom](images/tuneshroom.jpg)
+
 ## Hardware
 The PCB was designed in KiCAD using the wonderful [svg2shenzhen](https://github.com/badgeek/svg2shenzhen) plugin for Inkscape. The circuit is essentially a [Sparkfun Pro Micro](https://www.sparkfun.com/products/12640), thanks Sparkfun for sharing the schematic! It uses an Atmega32u4 with native USB. Each of the IO pins is hooked directly to one of the touch pads on the front and acts as MIDI key.
 

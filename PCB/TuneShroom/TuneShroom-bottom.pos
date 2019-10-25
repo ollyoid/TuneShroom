@@ -1,0 +1,23 @@
+### Module positions - created on Mon 07 Oct 2019 00:15:14 HKT ###
+### Printed by Pcbnew version kicad 5.0.2-bee76a0~70~ubuntu18.04.1
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val            Package                                              PosX       PosY       Rot  Side
+C1        22pF           C_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -106.6800  -109.4830   90.0000  bottom
+C2        22pF           C_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -104.1400  -109.4650   90.0000  bottom
+C3        0.1uF          C_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -111.7600  -104.3850  270.0000  bottom
+C4        1uF            C_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -111.7600  -109.4650   90.0000  bottom
+C5        0.1uF          C_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -109.2200  -109.4650   90.0000  bottom
+D1        LED            LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder   -100.5840  -131.0550   90.0000  bottom
+D2        LED            LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder   -109.7280  -117.3570   90.0000  bottom
+J23       USB_B_Micro    USB_Micro-B_Molex_47346-0001                    -103.9475  -137.6400  180.0000  bottom
+R1        10K            R_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -106.6800  -104.3850  270.0000  bottom
+R2        22             R_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -103.1240  -131.0550  270.0000  bottom
+R3        22             R_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -105.6640  -131.0550  270.0000  bottom
+R4        330            R_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -100.5840  -126.4830  270.0000  bottom
+R5        10K            R_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -109.2200  -104.3850  270.0000  bottom
+R6        330            R_0805_2012Metric_Pad1.15x1.40mm_HandSolder     -107.1880  -117.3480   90.0000  bottom
+TH1       Thermistor     Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder  -108.7120  -130.5925  270.0000  bottom
+U1        ATmega32U4-AU  TQFP-44_10x10mm_P0.8mm                          -104.5210   -89.3830  180.0000  bottom
+Y1        16MHz          Crystal_SMD_HC49-SD_HandSoldering                -99.0600  -112.1725  270.0000  bottom
+## End

@@ -1,0 +1,863 @@
+EESchema Schematic File Version 4
+LIBS:TuneShroom-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Crystal Y1
+U 1 1 5D94B4BC
+P 2450 1900
+F 0 "Y1" V 2404 2031 50  0000 L CNN
+F 1 "16MHz" V 2495 2031 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD_HandSoldering" H 2450 1900 50  0001 C CNN
+F 3 "~" H 2450 1900 50  0001 C CNN
+	1    2450 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 2050 3100 2050
+Wire Wire Line
+	3100 2050 3100 1950
+Wire Wire Line
+	3100 1750 2450 1750
+$Comp
+L Device:C C1
+U 1 1 5D94B882
+P 1900 1750
+F 0 "C1" V 1648 1750 50  0000 C CNN
+F 1 "22pF" V 1739 1750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1938 1600 50  0001 C CNN
+F 3 "~" H 1900 1750 50  0001 C CNN
+	1    1900 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D94B9B6
+P 1900 2050
+F 0 "C2" V 1648 2050 50  0000 C CNN
+F 1 "22pF" V 1739 2050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1938 1900 50  0001 C CNN
+F 3 "~" H 1900 2050 50  0001 C CNN
+	1    1900 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 2050 2050 2050
+Connection ~ 2450 2050
+Wire Wire Line
+	2450 1750 2050 1750
+Connection ~ 2450 1750
+Wire Wire Line
+	1750 1750 1750 1900
+$Comp
+L power:GND #PWR01
+U 1 1 5D94BAB8
+P 1750 1900
+F 0 "#PWR01" H 1750 1650 50  0001 C CNN
+F 1 "GND" V 1755 1772 50  0000 R CNN
+F 2 "" H 1750 1900 50  0001 C CNN
+F 3 "" H 1750 1900 50  0001 C CNN
+	1    1750 1900
+	0    1    1    0   
+$EndComp
+Connection ~ 1750 1900
+Wire Wire Line
+	1750 1900 1750 2050
+$Comp
+L power:+5V #PWR02
+U 1 1 5D94BBC4
+P 3700 1050
+F 0 "#PWR02" H 3700 900 50  0001 C CNN
+F 1 "+5V" H 3715 1223 50  0000 C CNN
+F 2 "" H 3700 1050 50  0001 C CNN
+F 3 "" H 3700 1050 50  0001 C CNN
+	1    3700 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1050 3700 1100
+$Comp
+L Device:R R1
+U 1 1 5D94BCE3
+P 2900 1400
+F 0 "R1" H 2970 1446 50  0000 L CNN
+F 1 "10K" H 2970 1355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 1400 50  0001 C CNN
+F 3 "~" H 2900 1400 50  0001 C CNN
+	1    2900 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1550 2900 1550
+Connection ~ 3700 1250
+Text GLabel 2650 1550 0    50   BiDi ~ 0
+RESET
+Wire Wire Line
+	2900 1550 2650 1550
+Connection ~ 2900 1550
+Wire Wire Line
+	3800 1250 3700 1250
+$Comp
+L Device:C C3
+U 1 1 5D94BF80
+P 2550 2400
+F 0 "C3" H 2665 2446 50  0000 L CNN
+F 1 "0.1uF" H 2665 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2588 2250 50  0001 C CNN
+F 3 "~" H 2550 2400 50  0001 C CNN
+	1    2550 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2150 2550 2150
+Wire Wire Line
+	2550 2150 2550 2250
+$Comp
+L power:GND #PWR06
+U 1 1 5D94C085
+P 2550 2750
+F 0 "#PWR06" H 2550 2500 50  0001 C CNN
+F 1 "GND" H 2555 2577 50  0000 C CNN
+F 2 "" H 2550 2750 50  0001 C CNN
+F 3 "" H 2550 2750 50  0001 C CNN
+	1    2550 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2550 2550 2750
+$Comp
+L power:GND #PWR014
+U 1 1 5D94C31E
+P 3700 5550
+F 0 "#PWR014" H 3700 5300 50  0001 C CNN
+F 1 "GND" H 3705 5377 50  0000 C CNN
+F 2 "" H 3700 5550 50  0001 C CNN
+F 3 "" H 3700 5550 50  0001 C CNN
+	1    3700 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 6450 1800 0    50   BiDi ~ 0
+RESET
+Text GLabel 6450 1650 0    50   BiDi ~ 0
+SCK
+Text GLabel 6450 1500 0    50   BiDi ~ 0
+MISO
+Text GLabel 7100 1650 2    50   BiDi ~ 0
+MOSI
+$Comp
+L power:GND #PWR03
+U 1 1 5D94E02A
+P 7100 1800
+F 0 "#PWR03" H 7100 1550 50  0001 C CNN
+F 1 "GND" H 7105 1627 50  0000 C CNN
+F 2 "" H 7100 1800 50  0001 C CNN
+F 3 "" H 7100 1800 50  0001 C CNN
+	1    7100 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5D94E17D
+P 7100 1500
+F 0 "#PWR04" H 7100 1350 50  0001 C CNN
+F 1 "+5V" H 7115 1673 50  0000 C CNN
+F 2 "" H 7100 1500 50  0001 C CNN
+F 3 "" H 7100 1500 50  0001 C CNN
+	1    7100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5D94ED79
+P 6700 2950
+F 0 "J5" H 6780 2992 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 2901 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 2950 50  0001 C CNN
+F 3 "~" H 6700 2950 50  0001 C CNN
+	1    6700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5D94EF5C
+P 6700 3100
+F 0 "J7" H 6780 3142 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 3051 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 3100 50  0001 C CNN
+F 3 "~" H 6700 3100 50  0001 C CNN
+	1    6700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5D94F04E
+P 6700 3250
+F 0 "J9" H 6780 3292 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 3201 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 3250 50  0001 C CNN
+F 3 "~" H 6700 3250 50  0001 C CNN
+	1    6700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 5D94F1FF
+P 6700 3400
+F 0 "J11" H 6780 3442 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 3351 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 3400 50  0001 C CNN
+F 3 "~" H 6700 3400 50  0001 C CNN
+	1    6700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 5D94F2F5
+P 6700 3550
+F 0 "J13" H 6780 3592 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 3501 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 3550 50  0001 C CNN
+F 3 "~" H 6700 3550 50  0001 C CNN
+	1    6700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J15
+U 1 1 5D94F3E8
+P 6700 3700
+F 0 "J15" H 6780 3742 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 3651 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 3700 50  0001 C CNN
+F 3 "~" H 6700 3700 50  0001 C CNN
+	1    6700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J17
+U 1 1 5D94F4E0
+P 6700 3850
+F 0 "J17" H 6780 3892 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 3801 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 3850 50  0001 C CNN
+F 3 "~" H 6700 3850 50  0001 C CNN
+	1    6700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J19
+U 1 1 5D94F5D5
+P 6700 4000
+F 0 "J19" H 6780 4042 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 3951 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 4000 50  0001 C CNN
+F 3 "~" H 6700 4000 50  0001 C CNN
+	1    6700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J21
+U 1 1 5D94F6CB
+P 6700 4150
+F 0 "J21" H 6780 4192 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 4101 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 4150 50  0001 C CNN
+F 3 "~" H 6700 4150 50  0001 C CNN
+	1    6700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5D94FA76
+P 6700 2650
+F 0 "J1" H 6780 2692 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 2601 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 2650 50  0001 C CNN
+F 3 "~" H 6700 2650 50  0001 C CNN
+	1    6700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5D94FA7D
+P 6700 2800
+F 0 "J3" H 6780 2842 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 2751 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 2800 50  0001 C CNN
+F 3 "~" H 6700 2800 50  0001 C CNN
+	1    6700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5D950258
+P 8600 2650
+F 0 "J4" H 8680 2692 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 2601 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 2650 50  0001 C CNN
+F 3 "~" H 8600 2650 50  0001 C CNN
+	1    8600 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5D95025F
+P 8600 2800
+F 0 "J6" H 8680 2842 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 2751 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 2800 50  0001 C CNN
+F 3 "~" H 8600 2800 50  0001 C CNN
+	1    8600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5D950266
+P 8600 2950
+F 0 "J8" H 8680 2992 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 2901 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 2950 50  0001 C CNN
+F 3 "~" H 8600 2950 50  0001 C CNN
+	1    8600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 5D95026D
+P 8600 3100
+F 0 "J10" H 8680 3142 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 3051 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 3100 50  0001 C CNN
+F 3 "~" H 8600 3100 50  0001 C CNN
+	1    8600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 5D950274
+P 8600 3250
+F 0 "J12" H 8680 3292 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 3201 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 3250 50  0001 C CNN
+F 3 "~" H 8600 3250 50  0001 C CNN
+	1    8600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J14
+U 1 1 5D95027B
+P 8600 3400
+F 0 "J14" H 8680 3442 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 3351 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 3400 50  0001 C CNN
+F 3 "~" H 8600 3400 50  0001 C CNN
+	1    8600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J16
+U 1 1 5D950282
+P 8600 3550
+F 0 "J16" H 8680 3592 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 3501 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 3550 50  0001 C CNN
+F 3 "~" H 8600 3550 50  0001 C CNN
+	1    8600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J18
+U 1 1 5D950289
+P 8600 3700
+F 0 "J18" H 8680 3742 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 3651 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 3700 50  0001 C CNN
+F 3 "~" H 8600 3700 50  0001 C CNN
+	1    8600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J20
+U 1 1 5D950290
+P 8600 3850
+F 0 "J20" H 8680 3892 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 3801 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 3850 50  0001 C CNN
+F 3 "~" H 8600 3850 50  0001 C CNN
+	1    8600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5D95029E
+P 6700 4350
+F 0 "J2" H 6780 4392 50  0000 L CNN
+F 1 "Conn_01x01" H 6780 4301 50  0000 L CNN
+F 2 "TuneShroom:contact" H 6700 4350 50  0001 C CNN
+F 3 "~" H 6700 4350 50  0001 C CNN
+	1    6700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J23
+U 1 1 5D950A2B
+P 1250 4400
+F 0 "J23" H 1305 4867 50  0000 C CNN
+F 1 "USB_B_Micro" H 1305 4776 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1400 4350 50  0001 C CNN
+F 3 "~" H 1400 4350 50  0001 C CNN
+	1    1250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 5D950C85
+P 2200 4100
+F 0 "#PWR011" H 2200 3950 50  0001 C CNN
+F 1 "+5V" H 2215 4273 50  0000 C CNN
+F 2 "" H 2200 4100 50  0001 C CNN
+F 3 "" H 2200 4100 50  0001 C CNN
+	1    2200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor TH1
+U 1 1 5D950EEC
+P 1900 4200
+F 0 "TH1" V 1658 4200 50  0000 C CNN
+F 1 "Thermistor" V 1749 4200 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1900 4200 50  0001 C CNN
+F 3 "~" H 1900 4200 50  0001 C CNN
+	1    1900 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 4200 1700 4200
+Wire Wire Line
+	2100 4200 2200 4200
+Wire Wire Line
+	2200 4200 2200 4100
+$Comp
+L Device:R R2
+U 1 1 5D95136C
+P 2400 4400
+F 0 "R2" V 2193 4400 50  0000 C CNN
+F 1 "22" V 2284 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 4400 50  0001 C CNN
+F 3 "~" H 2400 4400 50  0001 C CNN
+	1    2400 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D9514E1
+P 2400 4600
+F 0 "R3" V 2193 4600 50  0000 C CNN
+F 1 "22" V 2284 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 4600 50  0001 C CNN
+F 3 "~" H 2400 4600 50  0001 C CNN
+	1    2400 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 4400 2250 4400
+Wire Wire Line
+	1550 4500 2250 4500
+Wire Wire Line
+	2250 4500 2250 4600
+Wire Wire Line
+	1250 4800 1250 4850
+Text GLabel 2550 4600 2    50   BiDi ~ 0
+D-
+Text GLabel 2550 4400 2    50   BiDi ~ 0
+D+
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5D953606
+P 3700 3050
+F 0 "U1" H 3700 1164 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 3700 1073 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3700 3050 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3700 3050 50  0001 C CNN
+	1    3700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1250 2900 1100
+Wire Wire Line
+	2900 1100 3250 1100
+Connection ~ 3700 1100
+Wire Wire Line
+	3700 1100 3700 1250
+Wire Wire Line
+	3600 1250 3700 1250
+$Comp
+L Device:C C4
+U 1 1 5D954E97
+P 2800 3000
+F 0 "C4" H 2915 3046 50  0000 L CNN
+F 1 "1uF" H 2915 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 2850 50  0001 C CNN
+F 3 "~" H 2800 3000 50  0001 C CNN
+	1    2800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2850 2800 2850
+$Comp
+L power:GND #PWR08
+U 1 1 5D955292
+P 2800 3150
+F 0 "#PWR08" H 2800 2900 50  0001 C CNN
+F 1 "GND" H 2805 2977 50  0000 C CNN
+F 2 "" H 2800 3150 50  0001 C CNN
+F 3 "" H 2800 3150 50  0001 C CNN
+	1    2800 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 2550 0    50   BiDi ~ 0
+D+
+Text GLabel 3100 2650 0    50   BiDi ~ 0
+D-
+$Comp
+L power:+5V #PWR05
+U 1 1 5D955510
+P 2950 2350
+F 0 "#PWR05" H 2950 2200 50  0001 C CNN
+F 1 "+5V" H 2965 2523 50  0000 C CNN
+F 2 "" H 2950 2350 50  0001 C CNN
+F 3 "" H 2950 2350 50  0001 C CNN
+	1    2950 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2350 3100 2350
+Wire Wire Line
+	3700 4850 3700 5100
+Wire Wire Line
+	3600 4850 3600 5100
+Wire Wire Line
+	3600 5100 3700 5100
+Connection ~ 3700 5100
+$Comp
+L power:GND #PWR010
+U 1 1 5D956DBC
+P 4950 3950
+F 0 "#PWR010" H 4950 3700 50  0001 C CNN
+F 1 "GND" H 4955 3777 50  0000 C CNN
+F 2 "" H 4950 3950 50  0001 C CNN
+F 3 "" H 4950 3950 50  0001 C CNN
+	1    4950 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3650 4950 3650
+$Comp
+L power:+5V #PWR07
+U 1 1 5D9573C6
+P 1650 3000
+F 0 "#PWR07" H 1650 2850 50  0001 C CNN
+F 1 "+5V" H 1665 3173 50  0000 C CNN
+F 2 "" H 1650 3000 50  0001 C CNN
+F 3 "" H 1650 3000 50  0001 C CNN
+	1    1650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5D95775A
+P 1650 3300
+F 0 "#PWR09" H 1650 3050 50  0001 C CNN
+F 1 "GND" H 1655 3127 50  0000 C CNN
+F 2 "" H 1650 3300 50  0001 C CNN
+F 3 "" H 1650 3300 50  0001 C CNN
+	1    1650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5D9577F1
+P 1650 3150
+F 0 "C5" H 1765 3196 50  0000 L CNN
+F 1 "0.1uF" H 1765 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 3000 50  0001 C CNN
+F 3 "~" H 1650 3150 50  0001 C CNN
+	1    1650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5D9580B2
+P 2650 5650
+F 0 "D1" V 2688 5533 50  0000 R CNN
+F 1 "LED" V 2597 5533 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2650 5650 50  0001 C CNN
+F 3 "~" H 2650 5650 50  0001 C CNN
+	1    2650 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5D9581DF
+P 2650 5800
+F 0 "#PWR015" H 2650 5550 50  0001 C CNN
+F 1 "GND" H 2655 5627 50  0000 C CNN
+F 2 "" H 2650 5800 50  0001 C CNN
+F 3 "" H 2650 5800 50  0001 C CNN
+	1    2650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5D958283
+P 2650 5200
+F 0 "#PWR013" H 2650 5050 50  0001 C CNN
+F 1 "+5V" H 2665 5373 50  0000 C CNN
+F 2 "" H 2650 5200 50  0001 C CNN
+F 3 "" H 2650 5200 50  0001 C CNN
+	1    2650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D958335
+P 2650 5350
+F 0 "R4" H 2720 5396 50  0000 L CNN
+F 1 "330" H 2720 5305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2580 5350 50  0001 C CNN
+F 3 "~" H 2650 5350 50  0001 C CNN
+	1    2650 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 1850 2    50   BiDi ~ 0
+MISO
+Text GLabel 4300 1750 2    50   BiDi ~ 0
+MOSI
+Text GLabel 4300 1650 2    50   BiDi ~ 0
+SCK
+Text GLabel 4300 1550 2    50   BiDi ~ 0
+D17
+Text GLabel 4300 4450 2    50   BiDi ~ 0
+A0
+Text GLabel 4300 4350 2    50   BiDi ~ 0
+A1
+Text GLabel 4300 4250 2    50   BiDi ~ 0
+A2
+Text GLabel 4300 4150 2    50   BiDi ~ 0
+A3
+Text GLabel 4300 4050 2    50   BiDi ~ 0
+A4
+Text GLabel 4300 3950 2    50   BiDi ~ 0
+A5
+Text GLabel 4300 3750 2    50   BiDi ~ 0
+D7
+Text GLabel 4300 2750 2    50   BiDi ~ 0
+D3
+Text GLabel 4300 2850 2    50   BiDi ~ 0
+D2
+Text GLabel 4300 2950 2    50   BiDi ~ 0
+D0
+Text GLabel 4300 3050 2    50   BiDi ~ 0
+D1
+Text GLabel 4300 3150 2    50   BiDi ~ 0
+D4
+Text GLabel 4300 3250 2    50   BiDi ~ 0
+RX_LED
+Text GLabel 4300 3350 2    50   BiDi ~ 0
+D12
+Text GLabel 4300 3450 2    50   BiDi ~ 0
+D6
+Text GLabel 4300 1950 2    50   BiDi ~ 0
+D8
+Text GLabel 4300 2050 2    50   BiDi ~ 0
+D9
+Text GLabel 4300 2150 2    50   BiDi ~ 0
+D10
+Text GLabel 4300 2250 2    50   BiDi ~ 0
+D11
+Text GLabel 4300 2550 2    50   BiDi ~ 0
+D13
+Text GLabel 4300 2450 2    50   BiDi ~ 0
+D5
+Text GLabel 6500 2650 0    50   BiDi ~ 0
+A0
+Text GLabel 6500 2800 0    50   BiDi ~ 0
+A1
+Text GLabel 6500 2950 0    50   BiDi ~ 0
+A2
+Text GLabel 6500 3100 0    50   BiDi ~ 0
+A3
+Text GLabel 6500 3250 0    50   BiDi ~ 0
+A4
+Text GLabel 6500 3400 0    50   BiDi ~ 0
+A5
+Text GLabel 6500 3550 0    50   BiDi ~ 0
+D0
+Text GLabel 6500 3700 0    50   BiDi ~ 0
+D1
+Text GLabel 6500 3850 0    50   BiDi ~ 0
+D2
+Text GLabel 6500 4000 0    50   BiDi ~ 0
+D3
+Text GLabel 6500 4150 0    50   BiDi ~ 0
+D4
+Text GLabel 6500 4350 0    50   BiDi ~ 0
+D5
+Text GLabel 8400 2650 0    50   BiDi ~ 0
+D6
+Text GLabel 8400 2800 0    50   BiDi ~ 0
+D7
+Text GLabel 8400 2950 0    50   BiDi ~ 0
+D8
+Text GLabel 8400 3100 0    50   BiDi ~ 0
+D9
+Text GLabel 8400 3250 0    50   BiDi ~ 0
+D10
+Text GLabel 8400 3400 0    50   BiDi ~ 0
+D11
+Text GLabel 8400 3550 0    50   BiDi ~ 0
+D12
+Text GLabel 8400 3700 0    50   BiDi ~ 0
+D13
+Text GLabel 8400 3850 0    50   BiDi ~ 0
+D17
+$Comp
+L Connector_Generic:Conn_01x01 J22
+U 1 1 5D964094
+P 8600 4000
+F 0 "J22" H 8680 4042 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 3951 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 4000 50  0001 C CNN
+F 3 "~" H 8600 4000 50  0001 C CNN
+	1    8600 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 4000 0    50   BiDi ~ 0
+MISO
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D96679A
+P 3250 1100
+F 0 "#FLG0101" H 3250 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 3250 1274 50  0000 C CNN
+F 2 "" H 3250 1100 50  0001 C CNN
+F 3 "~" H 3250 1100 50  0001 C CNN
+	1    3250 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 1100
+Wire Wire Line
+	3250 1100 3700 1100
+NoConn ~ 1550 4600
+NoConn ~ 1150 4800
+$Comp
+L Device:R R5
+U 1 1 5D968532
+P 4950 3800
+F 0 "R5" H 5020 3846 50  0000 L CNN
+F 1 "10K" H 5020 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4880 3800 50  0001 C CNN
+F 3 "~" H 4950 3800 50  0001 C CNN
+	1    4950 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5D969BCD
+P 1950 5650
+F 0 "D2" V 1988 5533 50  0000 R CNN
+F 1 "LED" V 1897 5533 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1950 5650 50  0001 C CNN
+F 3 "~" H 1950 5650 50  0001 C CNN
+	1    1950 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5D969BD4
+P 1950 5800
+F 0 "#PWR016" H 1950 5550 50  0001 C CNN
+F 1 "GND" H 1955 5627 50  0000 C CNN
+F 2 "" H 1950 5800 50  0001 C CNN
+F 3 "" H 1950 5800 50  0001 C CNN
+	1    1950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D96A4AC
+P 1950 5350
+F 0 "R6" H 2020 5396 50  0000 L CNN
+F 1 "330" H 2020 5305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1880 5350 50  0001 C CNN
+F 3 "~" H 1950 5350 50  0001 C CNN
+	1    1950 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 5200 1    50   BiDi ~ 0
+RX_LED
+$Comp
+L power:GND #PWR0101
+U 1 1 5D96B9E5
+P 1250 4850
+F 0 "#PWR0101" H 1250 4600 50  0001 C CNN
+F 1 "GND" H 1255 4677 50  0000 C CNN
+F 2 "" H 1250 4850 50  0001 C CNN
+F 3 "" H 1250 4850 50  0001 C CNN
+	1    1250 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 1250 4850
+Wire Wire Line
+	1250 4850 1250 4900
+Wire Wire Line
+	3700 5100 3700 5550
+$Comp
+L TuneShroom:ICSP TP1
+U 1 1 5D976530
+P 6750 1600
+F 0 "TP1" H 6775 1965 50  0000 C CNN
+F 1 "ICSP" H 6775 1874 50  0000 C CNN
+F 2 "TuneShroom:ICSP" H 6800 1600 50  0001 C CNN
+F 3 "" H 6800 1600 50  0001 C CNN
+	1    6750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J24
+U 1 1 5D9A1559
+P 8600 4150
+F 0 "J24" H 8680 4192 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 4101 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 4150 50  0001 C CNN
+F 3 "~" H 8600 4150 50  0001 C CNN
+	1    8600 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 4150 0    50   BiDi ~ 0
+MOSI
+$Comp
+L Connector_Generic:Conn_01x01 J25
+U 1 1 5D9A1561
+P 8600 4300
+F 0 "J25" H 8680 4342 50  0000 L CNN
+F 1 "Conn_01x01" H 8680 4251 50  0000 L CNN
+F 2 "TuneShroom:contact" H 8600 4300 50  0001 C CNN
+F 3 "~" H 8600 4300 50  0001 C CNN
+	1    8600 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 4300 0    50   BiDi ~ 0
+RX_LED
+$EndSCHEMATC

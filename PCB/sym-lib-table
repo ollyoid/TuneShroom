@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name TuneShroom-cache)(type Legacy)(uri /home/oliver/projects/projects/tuneshroom/TuneShroom/TuneShroom-cache.lib)(options "")(descr ""))
+  (lib (name TuneShroom)(type Legacy)(uri /home/oliver/projects/projects/tuneshroom/TuneShroom/TuneShroom.lib)(options "")(descr ""))
+)

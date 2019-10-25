@@ -1,1 +1,3 @@
 gerbers: PCB/TuneShroom/
+color: white
+bom: PCB/bom.tsv
